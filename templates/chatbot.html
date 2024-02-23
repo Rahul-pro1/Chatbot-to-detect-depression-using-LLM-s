@@ -2,16 +2,40 @@
 <html>
 <head>
     <title>Chatbot Integration</title>
+    <link rel="stylesheet" href="style3.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-    <div id="chat-container"></div>
-    <form action="/chatbot" method="POST">
-        <input type="text" id="user-input" placeholder="Type your message..." name="msg">
-        <button type="submit">Send</button>
-    </form>
-    {% if response %}
-    <p>{{ response }}</p>
-    {% endif %}
+    <button class="chatbot-toggler"></button>
+    <span class="materials-symbols-outlined">comment</span>
+    <span class="materials-symbols-outlined">close</span>
+
+    <div class="chatbot">
+        <header>
+            <ul class="chatbox">
+                <li class="chat incoming">
+                    <span class="materials-symbols-outlined">smart</span>
+                    <p>Hi there 👋🏼 How can I help you today?</p>
+                </li>
+                {% if response %}
+                <li class="chat incoming">
+                    <span class="materials-symbols-outlined">smart</span>
+                    <p>{{ response }}</p>
+                </li>
+                {% endif %}
+                <li class="chat-outgoing">
+                    
+                </li>
+            </ul>
+        </header>
+        <div class="chat-input">
+            <form action="/chatbot" method="POST">
+                <textarea id="user-input" placeholder="Enter a message...." name="msg"></textarea>
+                <button type="submit" id="send-btn" class="materials-symbols-outlined">send</buttpn>
+            </form>
+        </div>
+    </div>
+
+    <div class="chat-container"></div>
 </body>
 </html>
