@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chatbot Integration</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="chat-container"></div>
+    <form action="/chatbot" method="POST">
+        <input type="text" id="user-input" placeholder="Type your message..." name="msg">
+        <button type="submit">Send</button>
+    </form>
+    {% if response %}
+    <p>{{ response }}</p>
+    {% endif %}
+</body>
+</html>

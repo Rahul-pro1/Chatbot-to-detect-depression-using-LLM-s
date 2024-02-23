@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health is wealth</title>
+    <link rel="stylesheet" href="static/style_boot.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="sidebar sidebarGo">
+            <nav>
+                <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/helpline">Helpline</a></li>
+                <li><a href="/contact">Appointment offline</a></li>
+                <li><a href="/login">Login</a></li>
+                
+                </ul>
+            </nav>
+        </div>
+
+        <div class="main">
+            <div class="Contact Form">
+                <h1>Contact Us for any suggestions</h1>
+                <form action="/contact" method="post">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label" name="email">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="email">
+                        <div class="form-text">This mail ID will never be shared</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput2" class="form-label" name="phone">Phone-no</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="Phone-Number (10 digits)" maxlength="10" name="phone">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label" name="feedback">Enter your feedback</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter your feedback" name="feedback"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="reset" class="btn btn-secondary">Reset</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="script1.js"></script> -->
+</body>
+</html>
