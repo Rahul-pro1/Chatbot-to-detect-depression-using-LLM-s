@@ -1,0 +1,100 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
+
+/* Global Styles */
+body {
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    background-color: #ff00c3; /* Set a light background color */
+    color: #efe6e6; /* Default text color */
+    background: linear-gradient(to right,#0b0101,#5ed9e4);
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #333; /* Dark background color */
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease; /* Smooth transition for link color */
+}
+
+.nav-links li a:hover {
+    color: #ffc107; /* Change color on hover */
+}
+
+/* Main Content Styling */
+.main {
+    padding: 79px 20px; /* Adjust padding */
+    margin-top: 70px; /* Make space for the fixed navbar */
+}
+
+/* Info Container Styling */
+.infoContainer {
+    background-color: #ff00c3;
+    min-height: 100vh; /* Ensure full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 1px;
+    background: linear-gradient(to right,#0b0101,#5ed9e4);
+}
+
+/* Developer Info Styling */
+.Devinfo {
+    text-align: center;
+    margin-right: 20px;
+}
+
+.name {
+    font-size: 2.5rem; /* Responsive font size */
+    font-weight: bold;
+}
+
+.about {
+    font-size: 1.5rem; /* Responsive font size */
+}
+
+.hello {
+    font-size: 2rem; /* Responsive font size */
+}
+
+/* Profile Image Styling */
+.profile-image {
+    width: 400px; /* Adjust image size */
+    height: auto;
+    border-radius: 50%;
+    border: 4px solid #fff; /* Increase border thickness */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    margin: 20px;
+}
+
+.btn.btn-primary{
+    padding: 8px;
+}
